@@ -5,11 +5,11 @@
     padding: 5rem 1.5rem;
     background: linear-gradient(rgba(0,0,1,0.42), rgba(0,0,1,0.549)), url('../assets/images/abc.jpg');
     background-position: center;
-    object-fit: cover;
+    object-fit:cover;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     row-gap: 3rem ;
   
     .spanText {
@@ -37,9 +37,12 @@
         background-color: white;
         color: var(--primaryColor);
       }
+      .search{
+        text-align:center;
+      }
     }
   }
-  
+
   
 
 .services_subtitle{

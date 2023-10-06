@@ -9,19 +9,21 @@ const SearchBar = () => {
     const distancceRef =useRef(0);
     const maxGroupSizeRef =useRef(0);
 
-//     const searchHandler =()=>{
-//         const location = locationRef.current.value;
-//         const distance = distancceRef.current.value;
-//         const maxGroupSize = maxGroupSizeRef.current.value;
+    const searchHandler =()=>{
+        const location = locationRef.current.value;
+        const distance = distancceRef.current.value;
+        const maxGroupSize = maxGroupSizeRef.current.value;
     
-//         if(location===" " || distance===" " || maxGroupSize===" ")
-//         {
-//             return alert("All Fields are required !")
-//         }  
-//  }
+        if(location===" " || distance===" " || maxGroupSize===" ")
+        {
+            return alert("All Fields are required !");
+        }  
+ }
  const handleClick = e =>{
     e.preventDefault()
+    if(!searchHandler()){
     navigate ("/searchResultList");
+    }
 }
 
 
