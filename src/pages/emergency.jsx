@@ -1,7 +1,7 @@
 import React from 'react'
 import './emergency.css'
 import { useNavigate } from 'react-router-dom'
-import {Container,Row ,Col, Form ,FormGroup , Button} from 'reactstrap'
+import {Container,Row ,Col, Button} from 'reactstrap'
 import police from '../assets/images/police.jpg'
 import ambulance from '../assets/images/ambulance.jpeg'
 import fire from '../assets/images/fire.jpeg'
@@ -23,7 +23,7 @@ const Emergency = () => {
                     <Button className='btn primary_btn w-100 mt-4' onClick={handleClick}>Police</Button>  
             </div>
             </Col>
-            <Col  lg='4' className='emergency  '>
+            <Col  lg='4' className='emergency'>
             <div>
                     <img src={ambulance} alt="" />
                     <Button className='btn primary_btn w-100 mt-4' onClick={handleClick}>Ambulance</Button>  
