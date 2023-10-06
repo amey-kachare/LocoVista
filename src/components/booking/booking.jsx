@@ -1,10 +1,10 @@
 import React,{ useState} from 'react'
 import './booking.css'
 import { useNavigate } from 'react-router-dom'
-import {Form,FormGroup,ListGroup, ListGroupItems,Button} from "reactstrap"
+import {Form,FormGroup,ListGroup,Button} from "reactstrap"
 const Booking = ({tour,avgRating}) => {
 
-    const {price,reviews}=tour;
+    const {price}=tour;
     const navigate = useNavigate()
 
     const [credentials, setCredentials]=useState({

@@ -62,7 +62,7 @@ const Footer = () => {
           <ListGroup className='footer_quickLinks'>
             {
               quick_links.map((item,index)=>
-              <ListGroupItem key={index} className='ps-0 border=0'>
+              <ListGroupItem key={index} className='ps-0 border-0'>
                 <Link to={item.path}>{item.display}</Link>
               </ListGroupItem>
               )

@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom'
 import loginImg from '../assets/images/login.jpg'
 import userIcon from '../assets/images/user.png'
 const Register = () => {
-  const [credentials, setCredentials]=useState({
+  const [setCredentials]=useState({
   userName:undefined, 
   email:undefined,
   password:undefined
