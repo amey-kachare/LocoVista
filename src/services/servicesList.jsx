@@ -9,17 +9,17 @@ const servicesData =[
     {
         imgUrl:weatherImg,
         title:"Calculate Weather",
-        desc : "Loremwfervev rw eyf7wfwxmu",
+        // desc : "Loremwfervev rw eyf7wfwxmu",
     },
     {
         imgUrl:guideImg,
         title:"Best Tour Guide",
-        desc : "Loremwfervev rw eyf7wfwxmu",
+        // desc : "Loremwfervev rw eyf7wfwxmu",
     },
     {
         imgUrl:customizationImg,
         title:"Customization",
-        desc : "Loremwfervev rw eeyf7wfwxmu",
+        // desc : "Loremwfervev rw eeyf7wfwxmu",
     },
 ]
 

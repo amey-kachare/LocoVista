@@ -23,7 +23,7 @@ const Home = () => {
                 <Subtitle subtitle={"Speed before starting your adventure  "}/>
               </div>  
               <h1><span className='highlight'>LocoVista :</span> Building Memories Across the Globe</h1>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus sapiente labore earum, nobis repellat quo inventore porro ea sed! Quod aspernatur fugiat sequi molestiae fugit facere necessitatibus? Ad, doloremque esse.</p>
+              <p>Discover the world with Locovista! 🌍 Explore breathtaking destinations, savor unique cultures, and create memories that will last a lifetime. Whether you crave adventure or seek relaxation, Locovista has the perfect getaway for you. Start your journey today and unlock the beauty of our diverse planet. #LocovistaAdventures 🗺️✈️</p>
             </div>
           </Col>
           <Col lg='2'>
@@ -53,7 +53,6 @@ const Home = () => {
         <Container>
           <Row>
             <Col lg='3'>
-            <Subtitle subtitle={'Our Services'}/>
               <h2 className='services_title'>We offer our best Services</h2>
             </Col>
             <ServicesList/>
@@ -79,7 +78,7 @@ const Home = () => {
         <Container>
           <Row>
             <Col lg='6'>
-              <div className="experience_conten ">
+              <div className="experience_content">
                 <Subtitle subtitle={'Experience'}/>
                 <h2>With all your experience <br/> we will serve you</h2>
                 <p>Lorem ipsum dolor sit, amet <br/>consectetur adipisicing elit. Inventore dicta consectetur natus.</p>

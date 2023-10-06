@@ -27,10 +27,6 @@ const quick_links2 = [
     path:'/register',
     display:'Register'
   },
-  {
-    path:'/reviews',
-    display:'Reviews'
-  },
 ]
 const Footer = () => {
   const year= new Date().getFullYear();
@@ -40,7 +36,6 @@ const Footer = () => {
       <Col lg='3'>
       <div className="logo1">
         <img src={logo1} alt="" />
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, voluptates.</p>
         <div className="social_links d-flex align-items-center gap-4">
           <span> 
             <Link to='#'><i class="ri-youtube-line"></i></Link>
@@ -62,7 +57,7 @@ const Footer = () => {
           <ListGroup className='footer_quickLinks'>
             {
               quick_links.map((item,index)=>
-              <ListGroupItem key={index} className='ps-0 border-0'>
+              <ListGroupItem key={index} className='ps-0 border=0'>
                 <Link to={item.path}>{item.display}</Link>
               </ListGroupItem>
               )
@@ -109,7 +104,7 @@ const Footer = () => {
           </ListGroup>
       </Col>
       <Col lg='12' className='text-center pt-5'>
-        <p className="copyright">Copyright {year}, design and develop. All rights are reserved.</p>
+        <p className="copyright">Copyright <span >&copy;</span> {year}, design and develop. All rights are reserved.</p>
       </Col>
       </Row>
     </Container>

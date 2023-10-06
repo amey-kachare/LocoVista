@@ -1,16 +1,13 @@
 import React,{useRef} from 'react'
 import './searchbar.css'
-
-import { useNavigate } from 'react-router-dom'
 import {Col ,Form ,FormGroup} from "reactstrap"
-import {BASE_URL} from '../utills/config'
 const SearchBar = () => {
-    const navigate = useNavigate();
+
     const locationRef = useRef('');
     const distancceRef =useRef(0);
     const maxGroupSizeRef =useRef(0);
 
-    const searchHandler =async()=>{
+    const searchHandler =()=>{
         const location = locationRef.current.value;
         const distance = distancceRef.current.value;
         const maxGroupSize = maxGroupSizeRef.current.value;
@@ -19,24 +16,14 @@ const SearchBar = () => {
         {
             return alert("All Fields are required !")
         }  
-
-        const res=await fetch(`${BASE_URL}/search/getTourBySearch?city=${location}&distance=${distance}&maxGroupSize=${maxGroupSize}`)
-        if(!res.ok) alert('Something went wrong')
-        const result=await res.json()
-        navigate(`/tours/search?city=${location}&distance=${distance}&maxGroupSize=${maxGroupSize}`,{state:result.data})
-
  }
-//  const handleClick = e =>{
-//     e.preventDefault()
-//     navigate ("/searchResultList");
-// }        
 
 
     return (
-        <Col lg='10' className='SearchBar'>
+        <Col lg='8' className='SearchBar'>
         <Form className='d-flex align-items-center gap-4'>
             <FormGroup className='d-flex gap-3 form_group form_group-fast'>
-                <span><i class="ri-map-pin-line"></i></span>
+                <span><i class="ri-map-pin-2-line"></i></span>
                 <div>
                     <h6>Location</h6>
                     <input type="text" placeholder='Where are you going ?' ref={locationRef} />

@@ -5,11 +5,12 @@ import tourImg04 from "../images/tour-img04.jpg";
 import tourImg05 from "../images/tour-img05.jpg";
 import tourImg06 from "../images/tour-img06.jpg";
 import tourImg07 from "../images/tour-img07.jpg";
+import tourImg08 from "../images/tour-img08.jpg";
 
 const tours = [
   {
     id: "01",
-    title: "ghat",
+    title: "Ghat",
     city: "karad",
     distance: 300,
     address:"Somewhere",
@@ -28,11 +29,11 @@ const tours = [
   },
   {
     id: "02",
-    title: "sadashivgad",
-    city: "karad",
+    title: "Sadashivgad",
+    city: "Karad",
     distance: 400,
     address:"Somewhere",
-    price: 99,
+    price: 149,
     maxGroupSize: 8,
     desc: "this is the description",
     reviews: [
@@ -47,9 +48,9 @@ const tours = [
   },
   {
     id: "03",
-    title: "pawkeshwar",
-    city: "karad",
-    distance: 500,
+    title: "Pavkeshwar",
+    city: "Karad",
+    distance: 49,
     address:"Somewhere",
     price: 99,
     maxGroupSize: 8,
@@ -66,11 +67,11 @@ const tours = [
   },
   {
     id: "04",
-    title: "kathi",
+    title: "Kathi",
     address:"Somewhere",
-    city: "patan",
-    distance: 500,
-    price: 99,
+    city: "Patan",
+    distance: 60,
+    price: 249,
     maxGroupSize: 8,
     desc: "this is the description",
     reviews: [
@@ -85,10 +86,10 @@ const tours = [
   },
   {
     id: "05",
-    title: "dhareshwar",
-    city: "patan",
+    title: "Dhareshwar",
+    city: "Patan",
     distance: 500,
-    price: 99,
+    price: 299,
     address:"Somewhere",
     maxGroupSize: 8,
     desc: "this is the description",
@@ -104,11 +105,11 @@ const tours = [
   },
   {
     id: "06",
-    title: "dategad",
-    city: "patan",
+    title: "Dategad",
+    city: "Patan",
     distance: 500,
     address:"Somewhere",
-    price: 99,
+    price: 299,
     maxGroupSize: 8,
     desc: "this is the description",
     reviews: [
@@ -120,10 +121,10 @@ const tours = [
   },
   {
     id: "07",
-    title: "vasantgad",
-    city: "karad",
+    title: "Vasantgad",
+    city: "Karad",
     distance: 500,
-    price: 99,
+    price: 199,
     address:"Somewhere",
     maxGroupSize: 8,
     desc: "this is the description",
@@ -136,18 +137,18 @@ const tours = [
   },
   {
     id: "08",
-    title: "sadawaghapur",
-    city: "patan",
+    title: "Sadawaghapur",
+    city: "Patan",
     address:"Somewhere",
     distance: 500,
-    price: 99,
+    price: 249,
     maxGroupSize: 8,
     desc: "this is the description",
     reviews: [
       
     ],
     avgRating: 4.5,
-    photo: tourImg03,
+    photo: tourImg08,
     featured: false,
   },
 ];
