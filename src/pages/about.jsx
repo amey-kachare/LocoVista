@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container,Row,Col } from 'reactstrap'
-import expImg from '../assets/images/exp.jpg'
+import galleryVideo from '../assets/images/galleryVideo.mp4'
 import Subtitle from '../shared/subtitle'
 import ServicesList from '../services/servicesList'
 const About = () => {
@@ -16,22 +16,22 @@ const About = () => {
            </div>
            <div className="counter_wrpper d-flex align-items-center gap-5">
              <div className="counterBox">
-               <span>95+</span>
+               <span>999+</span>
                <h6>Successfull Trips</h6>
              </div>
              <div className="counterBox">
-               <span>68+</span>
+               <span>199+</span>
                <h6>Regular Clients </h6>
              </div>
              <div className="counterBox">
-               <span>3</span>
+               <span>3+</span>
                <h6>years of experience</h6>
              </div>             
            </div>
          </Col>
          <Col lg='6'>
            <div className="expimg">
-             <img src={expImg} alt="" />
+           <video src={galleryVideo} alt="" controls/>
            </div>
          </Col>
        </Row>

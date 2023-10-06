@@ -41,6 +41,20 @@ ul {
   list-style: none;
 }
 
+.emergency_btn {
+  background: rgb(220, 53, 53) !important;
+  border: none !important;
+  border-radius: 50px !important;
+  padding: 0.4rem 1.5rem !important;
+}
+.emergency_btn a {
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: #fff;
+}
+.emergency_btn a:hover {
+  color: inherit;
+}
 .primary_btn {
   background: var(--secondary-color) !important;
   border: none !important;
@@ -54,21 +68,6 @@ ul {
   color: #fff;
 }
 .primary_btn a:hover {
-  color: inherit;
-}
-.emergency_btn {
-  background: red !important;
-  border: none !important;
-  border-radius: 50px !important;
-  padding: 0.4rem 1.5rem !important;
-}
-
-.emergency_btn a {
-  font-size: 1.1rem;
-  text-decoration: none;
-  color: #fff;
-}
-.emergency_btn a:hover {
   color: inherit;
 }
 .secondary_btn {

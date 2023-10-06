@@ -8,6 +8,7 @@ const nav_links=[
     path:'/home',
     display:'Home'
   },
+ 
   {
     path:'/about',
     display:'About'
@@ -19,7 +20,7 @@ const nav_links=[
   {
     path:'/contribute',
     display:'Contribute'
-  }
+  },
 ]
 
 const Header = () => {
@@ -69,12 +70,14 @@ const Header = () => {
              <div className="nav_btns d-flex align-items-center gap-4">
               <Button className='btn secondary_btn'><Link to ='/login'>Login</Link></Button>
               <Button className='btn primary_btn'><Link to ='/register'>Register</Link></Button>
-              <Button className='btn emergency_btn'><Link to ='/emergency'>Emergnency</Link></Button>
+              <Button className='btn emergency_btn'><Link to ='/emergency'>Emergency</Link></Button>
+
              </div> 
               <span className='mobile_menu'>
               <i class="ri-menu-line"></i>
               </span>
             </div>          
+
           </div>
         </Row>
       </Container>

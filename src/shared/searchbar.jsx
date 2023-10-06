@@ -1,26 +1,32 @@
 import React,{useRef} from 'react'
 import './searchbar.css'
+
+import { useNavigate } from 'react-router-dom'
 import {Col ,Form ,FormGroup} from "reactstrap"
 const SearchBar = () => {
-
+    const navigate = useNavigate()
     const locationRef = useRef('');
     const distancceRef =useRef(0);
     const maxGroupSizeRef =useRef(0);
 
-    const searchHandler =()=>{
-        const location = locationRef.current.value;
-        const distance = distancceRef.current.value;
-        const maxGroupSize = maxGroupSizeRef.current.value;
+//     const searchHandler =()=>{
+//         const location = locationRef.current.value;
+//         const distance = distancceRef.current.value;
+//         const maxGroupSize = maxGroupSizeRef.current.value;
     
-        if(location===" " || distance===" " || maxGroupSize===" ")
-        {
-            return alert("All Fields are required !")
-        }  
- }
+//         if(location===" " || distance===" " || maxGroupSize===" ")
+//         {
+//             return alert("All Fields are required !")
+//         }  
+//  }
+ const handleClick = e =>{
+    e.preventDefault()
+    navigate ("/searchResultList");
+}
 
 
     return (
-        <Col lg='8' className='SearchBar'>
+        <Col lg='12' className='SearchBar'>
         <Form className='d-flex align-items-center gap-4'>
             <FormGroup className='d-flex gap-3 form_group form_group-fast'>
                 <span><i class="ri-map-pin-2-line"></i></span>
@@ -43,7 +49,7 @@ const SearchBar = () => {
                     <input type="number" placeholder='0' ref={maxGroupSizeRef} />
                 </div>
             </FormGroup>
-            <span className='search_icon' type='submit' onClick={searchHandler}><i class="ri-search-line"></i></span>
+            <span className='search_icon' type='submit' onClick={handleClick}><i class="ri-search-line"></i></span>
         </Form>
       </Col>
       )

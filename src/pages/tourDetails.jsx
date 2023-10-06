@@ -1,19 +1,13 @@
-import React, { useRef, useState } from 'react';
-import './tourDetails.css';
-import avatar from '../assets/images/avatar.jpg';
-import tourData from '../assets/data/tours';
-import calculateAvgRating from '../utills/avgRating';
-import { useParams } from 'react-router-dom';
-import { Container, Row, Col, Form, ListGroup } from 'reactstrap';
-import Booking from '../components/booking/booking';
-// import {
-//   Map,
-//   InfoWindow,
-//   Marker,
-//   GoogleApiWrapper
-// } from 'google-maps-react';
-
+import React,{useRef,useState} from 'react'
+import './tourDetails.css'
+import avatar from '../assets/images/avatar.jpg'
+import tourData from '../assets/data/tours'
+import calculateAvgRating from '../utills/avgRating'
+import { useParams } from 'react-router-dom'
+import { Container, Row, Col, Form ,ListGroup } from 'reactstrap'
+import Booking from '../components/booking/booking'
 const TourDetails = () => {
+
   const {id}= useParams();
   const reviewMsgref = useRef('')
   const [tourRating, setTourRating]=useState(null)
@@ -135,24 +129,6 @@ const TourDetails = () => {
     </section>
     
   )
-};
+}
 
-// export class MapContainer extends React.Component {
-//   render() {
-//     return (
-//       <Map google={this.props.google} zoom={14}>
-//         <Marker onClick={this.onMarkerClick} name={'Current location'} />
-//         <InfoWindow onClose={this.onInfoWindowClose}>
-//           <div>
-//             <h1>{this.state.selectedPlace.name}</h1>
-//           </div>
-//         </InfoWindow>
-//       </Map>
-//     );
-//   }
-// }
-
-// export default GoogleApiWrapper({
-//   apiKey: 'AIzaSyAxk3Nrm8nZU8reOWglYElnfrsG7oa7KrQ'
-// })(MapContainer);
-export default TourDetails;
+export default TourDetails

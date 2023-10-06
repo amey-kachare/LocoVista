@@ -11,10 +11,10 @@ const Reviews = () => {
         dots:true,
         Infinite:true,
         autoplay:true,
-        speed:500,
+        speed:250,
         swipeToSlide:true,
-        autoplaySpeed:2000,
-        slidestoShow:3,
+        autoplaySpeed:1000,
+        slidestoShow:2,
 
         responsive:
         [
@@ -44,7 +44,7 @@ const Reviews = () => {
     <div className="d-flex align-items-center gap-4 mt-3">
             <img src={ava1} className='w-25 h-25 ' alt="" />
             <div>
-                <h5 className='mb-0 mt-3 rounded-2'>Vamika</h5>
+                <h5 className='mb-0 mt-3 rounded-2'>Vamika Kohli</h5>
                 <p>Customer</p>
             </div>
         </div>
@@ -54,7 +54,7 @@ const Reviews = () => {
         <div className="d-flex align-items-center gap-4 mt-3">
             <img src={ava2} className='w-25 h-25 rounded-2' alt="" />
             <div>
-                <h5 className='mb-0 mt-3'>Rohan</h5>
+                <h5 className='mb-0 mt-3'>Rohan Sharma</h5>
                 <p>Customer</p>
             </div>
         </div>
@@ -64,7 +64,7 @@ const Reviews = () => {
     <div className="d-flex align-items-center gap-4 mt-3">
             <img src={ava3} className='w-25 h-25 rounded-2' alt="" />
             <div>
-                <h5 className='mb-0 mt-3'>Sara</h5>
+                <h5 className='mb-0 mt-3'>Sara Pandey</h5>
                 <p>Customer</p>
             </div>
         </div>
@@ -74,7 +74,7 @@ const Reviews = () => {
     <div className="d-flex align-items-center gap-4 mt-3">
             <img src={ava5} className='w-25 h-25 rounded-2' alt="" />
             <div>
-                <h5 className='mb-0 mt-3'>Harsh</h5>
+                <h5 className='mb-0 mt-3'>Harsh Dhoni</h5>
                 <p>Customer</p>
             </div>
         </div>

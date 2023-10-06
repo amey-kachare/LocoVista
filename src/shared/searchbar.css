@@ -1,8 +1,10 @@
 .SearchBar{
-    padding: .6rem .6rem;
+    margin-top: 3rem;
+    padding: .5rem .5rem;
     border-radius: 50px;
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
     width: max-content;
+    background-color: #ddd;
 }
 
 .form_group span{

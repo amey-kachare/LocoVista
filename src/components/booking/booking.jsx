@@ -1,10 +1,10 @@
 import React,{ useState} from 'react'
 import './booking.css'
 import { useNavigate } from 'react-router-dom'
-import {Form,FormGroup,ListGroup, ListGroupItems,Button} from "reactstrap"
-const Booking = ({tour,avgRating}) => {
+import {Form,FormGroup,ListGroup,Button} from "reactstrap"
+const Booking = ({tour}) => {
 
-    const {price,reviews}=tour;
+    const {price}=tour;
     const navigate = useNavigate()
 
     const [credentials, setCredentials]=useState({
@@ -57,7 +57,7 @@ const Booking = ({tour,avgRating}) => {
                     required 
                     onChange={handleChange} />
                     <input type="number" 
-                    placeholder='' 
+                    placeholder='Members' 
                     id="guestSize" 
                     required 
                     onChange={handleChange} />

@@ -12,9 +12,12 @@ const Thankyou = () => {
                     <span><i class="ri-checkbox-circle-line"></i></span>
                     <h1 className='mb-3 fw-semibold'>Thank You</h1>
                     <h3 className='mb-4'>Your Tour is Booked Successfully.</h3>
-                    <Button className='btn primary_btn w-25'><Link to='/home' >Back to Home</Link></Button>
                 </div>
             </Col>
+            <Col lg='12' className='d-flex align-items-center justify-content-center gap-5'>
+            <Button className='btn primary_btn w-25 '><Link to='/home' >Back to Home</Link></Button>
+                    <Button className='btn primary_btn w-25 '><Link to='/tours' >Sudden Change in plan.</Link></Button>
+              </Col>
         </Row>
     </Container>
    </section>

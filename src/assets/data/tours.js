@@ -1,17 +1,17 @@
-import tourImg01 from "../images/tour-img01.jpg";
-import tourImg02 from "../images/tour-img02.jpg";
-import tourImg03 from "../images/tour-img03.jpg";
+import tourImg01 from "../images/tour-img01.jpeg";
+import tourImg02 from "../images/tour-img02.jpeg";
+import tourImg03 from "../images/tour-img03.jpeg";
 import tourImg04 from "../images/tour-img04.jpg";
-import tourImg05 from "../images/tour-img05.jpg";
-import tourImg06 from "../images/tour-img06.jpg";
-import tourImg07 from "../images/tour-img07.jpg";
-import tourImg08 from "../images/tour-img08.jpg";
+import tourImg05 from "../images/tour-img05.jpeg";
+import tourImg06 from "../images/tour-img06.jpeg";
+import tourImg07 from "../images/tour-img07.jpeg";
+import tourImg08 from "../images/tour-img08.jpeg";
 
 const tours = [
   {
     id: "01",
-    title: "Ghat",
-    city: "karad",
+    title: "Pritisangam",
+    city: "Karad",
     distance: 300,
     address:"Somewhere",
     price: 99,
@@ -31,7 +31,7 @@ const tours = [
     id: "02",
     title: "Sadashivgad",
     city: "Karad",
-    distance: 400,
+    distance: 250,
     address:"Somewhere",
     price: 149,
     maxGroupSize: 8,
@@ -39,10 +39,10 @@ const tours = [
     reviews: [
       {
         name: "tanmay",
-        rating: 4.6,
+        rating: 4.5,
       },
     ],
-    avgRating: 4.5,
+    avgRating: 4.7,
     photo: tourImg02,
     featured: true,
   },
@@ -50,18 +50,18 @@ const tours = [
     id: "03",
     title: "Pavkeshwar",
     city: "Karad",
-    distance: 49,
+    distance: 170,
     address:"Somewhere",
-    price: 99,
+    price: 49,
     maxGroupSize: 8,
     desc: "this is the description",
     reviews: [
       {
         name: "amey",
-        rating: 4.6,
+        rating: 4.1,
       },
     ],
-    avgRating: 4.5,
+    avgRating: 4.1,
     photo: tourImg03,
     featured: true,
   },
@@ -70,17 +70,17 @@ const tours = [
     title: "Kathi",
     address:"Somewhere",
     city: "Patan",
-    distance: 60,
+    distance: 1500,
     price: 249,
     maxGroupSize: 8,
     desc: "this is the description",
     reviews: [
       {
         name: "prasad",
-        rating: 4.6,
+        rating: 4.8,
       },
     ],
-    avgRating: 4.5,
+    avgRating: 4.8,
     photo: tourImg04,
     featured: true,
   },
@@ -88,7 +88,7 @@ const tours = [
     id: "05",
     title: "Dhareshwar",
     city: "Patan",
-    distance: 500,
+    distance: 2500,
     price: 299,
     address:"Somewhere",
     maxGroupSize: 8,
@@ -140,17 +140,18 @@ const tours = [
     title: "Sadawaghapur",
     city: "Patan",
     address:"Somewhere",
-    distance: 500,
+    distance: 700,
     price: 249,
     maxGroupSize: 8,
     desc: "this is the description",
     reviews: [
       
     ],
-    avgRating: 4.5,
+    avgRating: 4.7,
     photo: tourImg08,
     featured: false,
   },
+  
 ];
 
 export default tours;
