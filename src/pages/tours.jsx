@@ -5,15 +5,21 @@ import { Container,Row,Col } from 'reactstrap'
 import TourCard from './../shared/tourCard'
 import tourData from '../assets/data/tours'
 import SearchBar from './../shared/searchbar'
+import useFetch from '../hooks/useFetch'
+import { BASE_URL } from '../utills/config'
+
 const Tours = () => {
 
   const [pageCount, setPageCount]=useState(0)
   const [page,setPage]=useState(0)
+  const {data:tours,loading,error}=useFetch(`${BASE_URL}?page=${page}`);
+  const {data:tourCount}=useFetch(`${BASE_URL}/search/getTourCount`);
+  // console.log(tourCount);
 
   useEffect(()=>{
-    const pages = Math.ceil(5/4);
+    const pages = Math.ceil(tourCount/8);
     setPageCount(pages);
-  },[page]);
+  },[page,tourCount]);
 
   return (
     <>
@@ -27,8 +33,11 @@ const Tours = () => {
       </section>
       <section className='pt-0'>
         <Container>
-          <Row>
-            {tourData?.map(tour=> (
+          {loading && <h4 className='text-center pt-5'>Loading......</h4>}
+          {error && <h4 className='text-center pt-5'>{error}</h4>}
+          {
+            !loading && !error && <Row>
+            {tours?.map(tour=> (
             <Col lg='3'className='mb-4' key={tour.id}>
               <TourCard tour={tour}/>
               </Col>
@@ -45,6 +54,7 @@ const Tours = () => {
                 </div>
               </Col>
           </Row>
+          }
         </Container>
       </section>
     </>
