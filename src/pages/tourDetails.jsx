@@ -1,18 +1,24 @@
 import React,{useRef,useState} from 'react'
 import './tourDetails.css'
 import avatar from '../assets/images/avatar.jpg'
-import tourData from '../assets/data/tours'
+// import tourData from '../assets/data/tours'
 import calculateAvgRating from '../utills/avgRating'
 import { useParams } from 'react-router-dom'
 import { Container, Row, Col, Form ,ListGroup } from 'reactstrap'
 import Booking from '../components/booking/booking'
+import useFetch from '../hooks/useFetch'
+import { BASE_URL } from '../utills/config'
 const TourDetails = () => {
 
   const {id}= useParams();
   const reviewMsgref = useRef('')
   const [tourRating, setTourRating]=useState(null)
-  const tour =tourData.find(tour=>tour.id===id)
-  const {photo,title, address, desc, price, reviews,city,distance,maxGroupSize}=tour
+
+  // Fetch data from database
+  // const tour =tourData.find(tour=>tour.id===id)
+  const {data:tour}=useFetch(`${BASE_URL}/tours/${id}`);
+  const {photo,title, address, desc, price, reviews,city,distance,maxGroupSize}=tour;
+  console.log(tour)
   const {totalRating,avgRating}=calculateAvgRating(reviews);
   const submitHandler=e=>{
     e.preventDefault()

@@ -26,14 +26,14 @@ const SearchBar = () => {
             return alert("All Fields are required !")
         }  
 
-        const res=await fetch(`${BASE_URL}/search/getTourBySearch?city=${location}&distance=${distance}&maxGroupSize=${maxGroupSize}`)
-        console.log(res);
+        const res=await fetch(`${BASE_URL}/tours/search/getTourBySearch?city=${location}&distance=${distance}&maxGroupSize=${maxGroupSize}`)
+        // console.log(res);
 
         if(!res.ok) alert("Someting went wrong");
 
         const result=await res.json();
 
-        navigate(`/search?city=${location}&distance=${distance}&maxGroupSize=${maxGroupSize}`,{state: result.data});
+        navigate(`/tours/search?city=${location}&distance=${distance}&maxGroupSize=${maxGroupSize}`,{state: result.data});
  }
 //  const handleClick = e =>{
 //     e.preventDefault()

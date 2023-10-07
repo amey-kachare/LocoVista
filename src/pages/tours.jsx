@@ -12,14 +12,15 @@ const Tours = () => {
 
   const [pageCount, setPageCount]=useState(0)
   const [page,setPage]=useState(0)
-  const {data:tours,loading,error}=useFetch(`${BASE_URL}?page=${page}`);
-  const {data:tourCount}=useFetch(`${BASE_URL}/search/getTourCount`);
+  const {data:tours,loading,error}=useFetch(`${BASE_URL}/tours?page=${page}`);
+  const {data:tourCount}=useFetch(`${BASE_URL}/tours/search/getTourCount`);
   // console.log(tourCount);
 
   useEffect(()=>{
     const pages = Math.ceil(tourCount/8);
     setPageCount(pages);
-  },[page,tourCount]);
+    window.scrollTo(0,0)
+  },[page,tourCount,tours]);
 
   return (
     <>
@@ -38,7 +39,7 @@ const Tours = () => {
           {
             !loading && !error && <Row>
             {tours?.map(tour=> (
-            <Col lg='3'className='mb-4' key={tour.id}>
+              <Col lg='3'className='mb-4' key={tour.id}>
               <TourCard tour={tour}/>
               </Col>
               )) }

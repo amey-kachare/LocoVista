@@ -32,7 +32,7 @@ const Home = () => {
         <Container>
           <Row>
             <Col lg='6'>
-              <div className="experience_conten ">
+              <div className="experience_content ">
                 <Subtitle subtitle={'Experience'}/>
                 <h2>With all your experience <br/> we will serve you</h2>
                 <p>Lorem ipsum dolor sit, amet <br/>consectetur adipisicing elit. Inventore dicta consectetur natus.</p>
