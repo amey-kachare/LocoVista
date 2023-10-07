@@ -18,10 +18,9 @@ const Home = () => {
              <div className='home'>
               <div className='homeText'>
                 <Subtitle subtitle={'Speed before starting your experience'}/>
-                <h2 className= 'spanText'><strong>Locovista :</strong> Building Memories Across the World!</h2> 
-               
-                <SearchBar/>
+                <h2 className= 'spanText'><strong>Locovista |</strong> Building Memories Across the World!</h2> 
              </div>
+                <div className='search'><SearchBar/></div>
            </div>
          </Col>
           
