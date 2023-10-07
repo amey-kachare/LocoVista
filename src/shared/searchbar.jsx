@@ -1,28 +1,41 @@
 import React,{useRef} from 'react'
 import './searchbar.css'
+// import SerchResultList from '../pages/searchResultList'
 
 import { useNavigate } from 'react-router-dom'
 import {Col ,Form ,FormGroup} from "reactstrap"
+import { BASE_URL } from '../utills/config'
+
+
 const SearchBar = () => {
     const navigate = useNavigate()
     const locationRef = useRef('');
     const distancceRef =useRef(0);
     const maxGroupSizeRef =useRef(0);
 
-//     const searchHandler =()=>{
-//         const location = locationRef.current.value;
-//         const distance = distancceRef.current.value;
-//         const maxGroupSize = maxGroupSizeRef.current.value;
+    const searchHandler =async()=>{
+        const location = locationRef.current.value;
+        const distance = distancceRef.current.value;
+        const maxGroupSize = maxGroupSizeRef.current.value;
     
-//         if(location===" " || distance===" " || maxGroupSize===" ")
-//         {
-//             return alert("All Fields are required !")
-//         }  
-//  }
- const handleClick = e =>{
-    e.preventDefault()
-    navigate ("/searchResultList");
-}
+        if(location===" " || distance===" " || maxGroupSize===" ")
+        {
+            return alert("All Fields are required !")
+        }  
+
+        const res=await fetch(`${BASE_URL}/search/getTourBySearch?city=${location}&distance=${distance}&maxGroupSize=${maxGroupSize}`)
+        console.log(res);
+
+        if(!res.ok) alert("Someting went wrong");
+
+        const result=await res.json();
+
+        navigate(`/search?city=${location}&distance=${distance}&maxGroupSize=${maxGroupSize}`,{state: result.data});
+ }
+//  const handleClick = e =>{
+//     e.preventDefault()
+//     navigate ("/searchResultList");
+// }
 
 
     return (
@@ -49,7 +62,7 @@ const SearchBar = () => {
                     <input type="number" placeholder='0' ref={maxGroupSizeRef} />
                 </div>
             </FormGroup>
-            <span className='search_icon' type='submit' onClick={handleClick}><i class="ri-search-line"></i></span>
+            <span className='search_icon' type='submit' onClick={searchHandler}><i class="ri-search-line"></i></span>
         </Form>
       </Col>
       )
