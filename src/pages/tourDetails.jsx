@@ -17,9 +17,11 @@ const TourDetails = () => {
 
   // Fetch data from database
   // const tour =tourData.find(tour=>tour.id===id)
-  const {data : ttt}=useFetch(`${BASE_URL}/tours/${id}`);
-  const {photo,title, address, desc, price, reviews,city,distance,maxGroupSize}=ttt;
-  console.log("Tour DAta:",ttt)
+
+  const {data:tour}=useFetch(`${BASE_URL}/tours/${id}`);
+  console.log("ID",id)
+  const {photo,title, address, desc, price, reviews,city,distance,maxGroupSize}=tour;
+  console.log(tour)
   const {totalRating,avgRating}=calculateAvgRating(reviews);
   const submitHandler=e=>{
     e.preventDefault()
@@ -129,7 +131,7 @@ const TourDetails = () => {
           </div>
           </Col>
           <Col lg='4'>
-              <Booking ttt={ttt} avgRating={avgRating}/>
+              <Booking tour={tour} avgRating={avgRating}/>
           </Col>
         </Row>
       </Container>
