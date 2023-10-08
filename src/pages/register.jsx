@@ -8,8 +8,9 @@ import userIcon from '../assets/images/user.png'
 import { AuthContext } from '../components/context/AuthContext'
 import { BASE_URL } from '../utills/config'
 const Register = () => {
+
   const [credentials,setCredentials]=useState({
-  userName:undefined, 
+  username:undefined, 
   email:undefined,
   password:undefined
 })
@@ -26,7 +27,7 @@ const handleClick = async e =>{
     const res=await fetch(`${BASE_URL}/auth/register`,{
       method:"post",
       headers:{
-        "content-type":"application.json",
+        "content-type":"application/json",
       },
       body:JSON.stringify(credentials),
     });
