@@ -81,6 +81,7 @@ const Header = () => {
               {
                 user?(<>
                 <h5 className='mb-0'>{user.username}</h5>
+                {console.log(user.username)}
                 <Button className='btn btn-dark' onClick={logout}>Logout</Button>
                 </>):
                 (<>

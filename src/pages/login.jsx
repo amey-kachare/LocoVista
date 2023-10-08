@@ -42,7 +42,7 @@ const Login = () => {
         const user =result.data;
         console.log(user)
         // Dispatch the user information to your AuthContext
-        dispatch({ type: 'LOGIN_SUCCESS', payload: JSON.stringify(user) });
+        dispatch({ type: 'LOGIN_SUCCESS', payload: user });
 
         // Navigate to the desired page after successful login
         navigate('/home');
