@@ -17,6 +17,7 @@ const TourDetails = () => {
   // Fetch data from database
   // const tour =tourData.find(tour=>tour.id===id)
   const {data:tour}=useFetch(`${BASE_URL}/tours/${id}`);
+  console.log("ID",id)
   const {photo,title, address, desc, price, reviews,city,distance,maxGroupSize}=tour;
   console.log(tour)
   const {totalRating,avgRating}=calculateAvgRating(reviews);
