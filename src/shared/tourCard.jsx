@@ -5,7 +5,7 @@ import {Link} from "react-router-dom"
 import calculateAvgRating from '../utills/avgRating'
 const TourCard = ({tour}) => {
 
-    const {id, title,city, photo, price, featured, reviews}=tour;
+    const {_id, title,city, photo, price, featured, reviews}=tour;
     const {totalRating,avgRating}=calculateAvgRating(reviews);
   
     return (
@@ -26,11 +26,11 @@ const TourCard = ({tour}) => {
             </span>
         </div>
 
-        <h5 className='tourTitle'><Link to={`/tours/${id}`}>{title}</Link></h5>
+        <h5 className='tourTitle'><Link to={`/tours/${_id}`}>{title}</Link></h5>
         <div className="cardBottom d-flex align-items-center justify-content-between mt-3">
             <h5>₹{price} <span>/person</span></h5>
             <button className='btn bookinBtn'>
-               <Link to={`/tours/${id}`}>Book Now</Link>
+               <Link to={`/tours/${_id}`}>Book Now</Link>
             </button>
         </div>
       

@@ -11,20 +11,21 @@ import { BASE_URL } from '../utills/config'
 const TourDetails = () => {
 
   const {id}= useParams();
+  console.log("Tour id:",id)
   const reviewMsgref = useRef('')
   const [tourRating, setTourRating]=useState(null)
 
   // Fetch data from database
   // const tour =tourData.find(tour=>tour.id===id)
-  const {data:tour}=useFetch(`${BASE_URL}/tours/${id}`);
-  const {photo,title, address, desc, price, reviews,city,distance,maxGroupSize}=tour;
-  console.log(tour)
+  const {data : ttt}=useFetch(`${BASE_URL}/tours/${id}`);
+  const {photo,title, address, desc, price, reviews,city,distance,maxGroupSize}=ttt;
+  console.log("Tour DAta:",ttt)
   const {totalRating,avgRating}=calculateAvgRating(reviews);
   const submitHandler=e=>{
     e.preventDefault()
     const reviewText= reviewMsgref.current.value
     
-    alert(`${reviewText},${tourRating}`);
+    alert(`${reviewText},${tourRating}`)  ;
   }
   
   return (
@@ -128,7 +129,7 @@ const TourDetails = () => {
           </div>
           </Col>
           <Col lg='4'>
-              <Booking tour={tour} avgRating={avgRating}/>
+              <Booking ttt={ttt} avgRating={avgRating}/>
           </Col>
         </Row>
       </Container>
