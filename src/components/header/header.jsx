@@ -10,11 +10,6 @@ const nav_links=[
     path:'/home',
     display:'Home'
   },
- 
-  {
-    path:'/about',
-    display:'About'
-  },
   {
     path:'/tours',
     display:'Tours'
@@ -23,6 +18,11 @@ const nav_links=[
     path:'/contribute',
     display:'Contribute'
   },
+  
+   {
+     path:'/about',
+     display:'About'
+   },
 ]
 
 const Header = () => {
@@ -59,7 +59,7 @@ const Header = () => {
           <div className='nav_wrapper d-flex align-items-center justify-content-between'>
             
           {/*logo*/}  
-            <div className="logo w-25 h-25">
+            <div className="logo w-5 h-50">
               <img src={logo} alt="" />
             </div>
 
@@ -77,11 +77,11 @@ const Header = () => {
             </div>  
            { /*Login/Register */ }
             <div className="nav_right d-flex align-items-center gap-5 ">
-             <div className="nav_btns d-flex align-items-center gap-4">
+             <div className="nav_btns d-flex align-items-center gap-3">
               {
                 user?(<>
                 <h5 className='mb-0'>{user.username}</h5>
-                {console.log(user.username)}
+                {/* {console.log(user.username)} */}
                 <Button className='btn btn-dark' onClick={logout}>Logout</Button>
                 </>):
                 (<>

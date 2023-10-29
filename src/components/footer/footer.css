@@ -4,14 +4,16 @@
 }
 
 .logo1 img{
-    margin-top: 1.5rem;
-    width: 120px;
-    height: 120px;
+    /* margin-top: 0.5rem; */
+    width: 75%;
+    height: 75%;
+    margin-left: 25px;
 }
 .footer .logo p{
     color: var(--text-color);
 }
 .social_links span a{
+    margin-left: 10px;
     text-decoration: none;
     color: var(--heading-color);
     font-size: 1.2rem;

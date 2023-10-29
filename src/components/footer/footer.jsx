@@ -37,7 +37,7 @@ const Footer = () => {
       <Col lg='3'>
       <div className="logo1">
         <img src={logo1} alt="" />
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, voluptates.</p>
+        <p>Hope you like our website and it helped you in plannig your trip successfully.</p>
         <div className="social_links d-flex align-items-center gap-4">
           <span> 
             <Link to='#'><i class="ri-youtube-line"></i></Link>

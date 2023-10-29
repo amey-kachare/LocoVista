@@ -38,4 +38,5 @@
     color: #fff;
     border-radius: 10px 5px 10px 5px;
     cursor: pointer;
+    align-content: end;
 }

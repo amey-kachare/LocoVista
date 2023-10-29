@@ -1,10 +1,20 @@
 import React from 'react'
-
+import CommonSection from '../shared/commonSection'
+import { Container,Row,Col } from 'reactstrap'
+import SearchBar from './../shared/searchbar'
 const Customize = () => {
   return (
-    <div>
-      Customize
-    </div>
+    <>
+    <CommonSection title={"Customize Your Trip"}/>
+    <section>
+        <Container>
+          <Row>
+            <SearchBar/>
+          </Row>
+        </Container>
+      </section>
+      
+    </>
   )
 }
 
