@@ -12,7 +12,7 @@ const TourCard = ({tour}) => {
     <div className='tourCard'>
       <Card>
         <div className="touImg">
-            <img src={photo} alt="tourImg"/>
+            <img src={photo[0]} alt="tourImg"/>
             {featured && <span>Featured</span>}
         </div>
         <CardBody>
@@ -26,11 +26,11 @@ const TourCard = ({tour}) => {
             </span>
         </div>
 
-        <h5 className='tourTitle'><Link to={`/tours/${_id}`}>{title}</Link></h5>
+        <h5 className='tourTitle'><Link to={`/ajencys/${_id}`}>{title}</Link></h5>
         <div className="cardBottom d-flex align-items-center justify-content-between mt-3">
             <h5>₹{price} <span>/person</span></h5>
             <button className='btn bookinBtn'>
-               <Link to={`/tours/${_id}`}>Book Now</Link>
+               <Link to={`/ajencys/${_id}`}>Book Now</Link>
             </button>
         </div>
       
