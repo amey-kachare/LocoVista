@@ -139,5 +139,5 @@ console.log()
     </section>
   );
 };
-
+//faltu comment
 export default TourDetails;
