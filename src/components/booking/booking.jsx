@@ -30,7 +30,7 @@ const Booking = ({tour}) => {
   return (
     <div className='booking'>
      <div className="bookingTop d-flex align-items-center justify-contnt-between">
-        <h3>₹{price} <span>/person</span></h3>
+        <h3>Add Details</h3>
        
      </div>
         <div className="bookingForm">
@@ -65,7 +65,7 @@ const Booking = ({tour}) => {
             </Form>
         </div>
         <div className="bookingBottom">
-            <ListGroup className='border-0 px-0'>
+            {/* <ListGroup className='border-0 px-0'>
                 <h5 className='d-flex align-items-center gap-1'>₹{price}<i class="ri-close-line"> 1 person</i></h5>
                 <span>₹{price}</span>
             </ListGroup>
@@ -77,9 +77,9 @@ const Booking = ({tour}) => {
             <ListGroup className='total border-0 px-0'>
                 <h5>Total</h5>
                 <span>₹{totalAmount}</span>
-            </ListGroup> 
+            </ListGroup>  */}
 
-            <Button className='btn primary_btn w-100 mt-4' onClick={handleClick}>Book Now</Button>       
+            <Button className='btn primary_btn w-100 mt-4' onClick={handleClick}>Add to Your Travelling List</Button>       
             </div>
     </div>
   )

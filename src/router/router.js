@@ -2,6 +2,7 @@ import React from 'react'
 import {Routes,Route,Navigate} from 'react-router-dom';
 import Home from '../pages/home'
 import Tours from '../pages/tours'
+import PlaceDetails from '../pages/placeDetails';
 import TourDetails from '../pages/tourDetails'
 import Login from '../pages/login'
 import Register from '../pages/register'
@@ -26,7 +27,7 @@ const Router = () => {
         <Route path='/emergency' element={<Emergency/>}/>
         <Route path='/contribute' element={<Contribute/>}/>
         <Route path='/tours' element={< Tours/>}/>
-        <Route path='/tours/:id' element={< TourDetails />}/>
+        <Route path='/tours/:id' element={< PlaceDetails />}/>
         <Route path='/ajencys/:id' element={< TourDetails />}/>
         <Route path='/login' element={<Login/>}/>
         <Route path='/register' element={<Register/>}/>

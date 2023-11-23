@@ -2,7 +2,7 @@ import {React,useState} from 'react'
 import CommonSection from '../shared/commonSection'
 import { Container,Row,Col } from 'reactstrap'
 import {useLocation} from 'react-router-dom'
-import TourCard from '../shared/tourCard'
+import TourCard from '../shared/placeCard'
 
 const SearchResultList = () => {
   const location=useLocation();

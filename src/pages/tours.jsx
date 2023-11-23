@@ -2,7 +2,7 @@ import React, {useState,useEffect} from 'react'
 import CommonSection from '../shared/commonSection'
 import './tours.css'
 import { Container,Row,Col } from 'reactstrap'
-import TourCard from './../shared/tourCard'
+import TourCard from './../shared/placeCard'
 import SearchBar from './../shared/searchbar'
 import useFetch from '../hooks/useFetch'
 import { BASE_URL } from '../utills/config'
@@ -23,7 +23,7 @@ const Tours = () => {
 
   return (
     <>
-      <CommonSection title={"All Tours"}/>
+      <CommonSection title={"Places to Visit"}/>
       <section>
         <Container>
           <Row>
