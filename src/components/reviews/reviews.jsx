@@ -13,7 +13,7 @@ const Reviews = () => {
         autoplay:true,
         speed:250,
         swipeToSlide:true,
-        autoplaySpeed:1000,
+        autoplaySpeed:5000,
         slidestoShow:2,
 
         responsive:

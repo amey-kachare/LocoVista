@@ -5,7 +5,7 @@ import {Link} from "react-router-dom"
 import calculateAvgRating from '../utills/avgRating'
 const TourCard = ({tour}) => {
 
-    const {_id, title,city, photo, price, featured, reviews}=tour;
+    const {_id, title,city, photo, featured, reviews}=tour;
     const {totalRating,avgRating}=calculateAvgRating(reviews);
   
     return (
