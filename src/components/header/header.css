@@ -1,41 +1,41 @@
-.header{
-    width:100%;
+.header {
+    width: 100%;
     height: 80px;
     line-height: 80px;
     margin-bottom: -1rem;
 }
 
-.logo img{
+.logo img {
     margin-top: -3rem;
     width: 100px;
     height: 100px;
 }
 
-.menu{
+.menu {
     margin-bottom: 0;
 }
 
-.nav_item a{
+.nav_item a {
     text-decoration: none;
     color: var(--heading-color);
     font-weight: 500;
     font-size: 1.1rem;
 }
 
-.nav_item a:hover{
-    color:inherit;
+.nav_item a:hover {
+    color: inherit;
 }
 
-.nav_item a.active_link{
+.nav_item a.active_link {
     color: var(--secondary-color);
 }
 
-.mobile_menu{
+.mobile_menu {
     font-size: 1.3rem;
     color: var(--heading-color);
     display: none;
 }
-.sticky_header{
+.sticky_header {
     width: 100%;
     height: 4px;
     line-height: 80px;

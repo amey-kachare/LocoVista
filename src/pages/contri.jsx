@@ -1,11 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const Contri = () => {
-  return (
-    <div>
-      Contri
-    </div>
-  )
-}
+    return <div>Contri</div>;
+};
 
-export default Contri
+export default Contri;

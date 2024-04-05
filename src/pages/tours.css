@@ -1,4 +1,4 @@
-.tourpage span{ 
+.tourpage span {
     width: 2rem;
     height: 2rem;
     padding: 5px;
@@ -13,7 +13,7 @@
     border: 1px solid var(--secondary-color);
 }
 
-.active_page{
+.active_page {
     background: var(--secondary-color);
     color: #fff !important;
 }
